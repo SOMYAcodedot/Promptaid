@@ -1,0 +1,826 @@
+/* Homepage Styles */
+.homepage {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #fff9e6; /* Faint yellow background color */
+  padding: 90px 20px 20px; /* Top padding adjusted to avoid overlap */
+}
+
+
+/* Homepage Header */
+.homepage-header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.homepage-header p {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Slider container */
+.slider-container {
+  position: relative;
+  width: 80%;
+  height: auto;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #fff4cc;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.slide {
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.02);
+}
+
+.service-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.service-img {
+  width: 400px; /* Full image size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.service-info-container {
+  text-align: left; /* Align text to the left */
+}
+
+.service-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+.service-info {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Hover effect for slight zoom */
+.service-item:hover .service-img {
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+/* Arrows */
+.left-arrow, .right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.left-arrow:hover, .right-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Appointment Section */
+.appointment {
+  margin-top: 40px;
+}
+
+.appointment-buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.appointment-buttons button:hover {
+  background-color: #218838;
+}
+
+/* Footer */
+.footer {
+  background-color: #fff4cc;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid #ddd;
+  color: #333;
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1;
+  padding: 0 10px;
+}
+
+/* Left Section: Address and Appointment Desk */
+.footer-left h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.footer-left p {
+  margin-bottom: 10px;
+}
+
+/* Center Section: Visiting Hours */
+.footer-center {
+  text-align: center;
+}
+
+.footer-center h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.footer-center p {
+  margin-bottom: 8px;
+}
+
+/* Right Section: Call Info and Quick Links */
+.footer-right {
+  text-align: right;
+}
+
+.footer-contact {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-contact svg {
+  margin-right: 8px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Typewriter effect styles */
+.typewriter-effect {
+  font-size: 24px;
+  color: #007bff;
+  margin: 15px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Navbar Styles */
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  height: 70px; /* Height of the navbar */
+  top: 0;
+  background-color: transparent;
+  transition: all 0.7s ease;
+}
+
+
+/* Background blur when scrolling */
+.blur {
+  background-color: #01111a8d;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Logo Styles */
+.Logo {
+  font-size: 32px;
+  letter-spacing: 2px;
+  padding-left: 7%;
+  color: #FF5F00; /* Match this color to your theme */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Logo img {
+  height: 50px;
+  width: auto;
+}
+
+/* Navbar Links */
+.NavbarLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 7%;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.NavbarLinks li {
+  padding: 2px 20px;
+  list-style-type: none;
+}
+
+.NavbarLinks a {
+  color: #FF5F00;  /* Same color for consistency */
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  padding: 2px 7px;
+  transition: color 0.3s;
+}
+
+.NavbarLinks a:hover {
+  color: #ffffff; /* Change to white on hover */
+}
+
+/* Underline animation on hover */
+.NavbarLinks a::after {
+  background-color: #ffffff;
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: 5px;
+  bottom: 0;
+  width: 0px;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.NavbarLinks a:hover:after {
+  width: 95%;
+}
+
+/* Hamburger Menu for Mobile */
+.Hamburger {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .Navbar {
+    width: 100%;
+  }
+
+  .NavbarLinks {
+    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    inset: 0 0 0 50%;
+    gap: 50px;
+    background-color: #0c2f69;
+    height: 100vh;
+    padding-top: max(20%, 120px);
+    transform: translateX(100%);
+    transition: 0.5s;
+  }
+
+  .showNavbar {
+    transform: translateX(0);
+  }
+
+  .Hamburger {
+    display: block;
+    z-index: 2;
+    padding: 5px;
+    padding-right: 7%;
+    cursor: pointer;
+  }
+
+  .bar {
+    display: block;
+    background-color: #e7e7e7;
+    border-radius: 50px;
+    height: 2.5px;
+    width: 30px;
+    margin: 6px;
+    transition: 0.5s;
+  }
+
+  .barOne {
+    rotate: -225deg;
+    position: relative;
+    top: 4px;
+    transition: 0.5s;
+  }
+
+  .barTwo {
+    display: none;
+  }
+
+  .barThree {
+    position: relative;
+    bottom: 4px;
+    rotate: 225deg;
+    transition: 0.5s;
+  }
+}
+
+/* Contact Form Container */
+.contact-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Textarea Style */
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 18px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+
+/* Submission Message */
+.submitted-message {
+  text-align: center;
+  font-size: 18px;
+  color: #28a745;
+  margin-top: 20px;
+}
+
+/* About Page Container */
+.about-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff9e6;  /* Light yellow background */
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* About Header Section */
+.about-header {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.hospital-icon {
+  font-size: 50px;
+  color: #007bff;  /* Primary color */
+  margin-bottom: 10px;
+}
+
+.about-header h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.about-intro {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Vision and Mission Sections */
+.about-section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.about-section div {
+  width: 45%;
+  background-color: #fff4cc;  /* Soft background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.about-section h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Icons for Vision and Mission */
+.icon {
+  font-size: 40px;
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+/* Why Choose Us Section */
+.about-values {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.about-values h2 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.about-values p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+}
+
+
+/* Scoped Appointment Page Container */
+.appointment-page .appointment-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-page .appointment-container h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.appointment-page .form-group {
+  margin-bottom: 15px;
+}
+
+.appointment-page .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.appointment-page .form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.appointment-page .form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.appointment-page button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.appointment-page button:hover {
+  background-color: #0056b3;
+}
+
+/* Toggle Button */
+.appointment-page .toggle-btn {
+  margin-top: 15px;
+  background: none;
+  color: #007bff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.appointment-page .toggle-btn:hover {
+  text-decoration: underline;
+}
+
+/* Ambulance Container */
+.ambulance-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff9e6;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Ambulance Image with Contact Overlay */
+.ambulance-image-section {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.ambulance-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contact-number-overlay {
+  position: absolute;
+  bottom: 10px; 
+  left: 45%; 
+  transform: translateX(-50%); 
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 19px;
+  width: fit-content; 
+}
+
+/* Information Section */
+.ambulance-info {
+  text-align: left;
+}
+
+.ambulance-info h1, .ambulance-info h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.ambulance-info p {
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 18px;
+}
+
+/* Form Styling */
+.ambulance-form {
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #007bff;
+  font-size: 1.2rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 40px;  /* Space for icons */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.form-group input::placeholder {
+  color: #999;
+  transition: color 0.3s ease;
+}
+
+.form-group input:focus::placeholder {
+  color: #007bff;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+  transform: translateY(-3px);  /* Button lift on hover */
+}
+
+/* Two Block Structure - Side by Side */
+.ambulance-services {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align at the top */
+  gap: 20px;
+}
+
+/* Left Block - Services in Grid */
+.ambulance-left {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 services per row */
+  gap: 15px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ambulance-logo-block {
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.ambulance-logo-block img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.ambulance-logo-block h3 {
+  font-size: 14px;
+  color: #007bff;
+}
+
+.ambulance-logo-block:hover {
+  background-color: #e0f7fa;
+  transform: scale(1.05);
+}
+
+/* Right Block - Service Description */
+.ambulance-right {
+  flex: 2;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  text-align: center;
+}
+
+.ambulance-right h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.ambulance-right p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .ambulance-services {
+    flex-direction: column;
+  }
+
+  .ambulance-left {
+    grid-template-columns: repeat(2, 1fr); /* 2 services per row on smaller screens */
+  }
+
+  .ambulance-right {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+
+.reference-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .ambulance-services {
+    flex-direction: column;
+  }
+
+  .ambulance-left {
+    grid-template-columns: repeat(2, 1fr); /* 2 services per row on smaller screens */
+  }
+
+  .ambulance-right {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ambulance-left {
+    grid-template-columns: repeat(1, 1fr); /* 1 service per row on mobile */
+  }
+}
+
+
+
+
